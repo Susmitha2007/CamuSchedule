@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Exam Schedule</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+
+        .btn-group .btn {
+            border-radius: 20px !important;
+            margin-left: 5px;
+        }
+
+        .table {
+            margin-top: 15px;
+        }
+
+        .table thead tr {
+            background-color: #e9ecef;
+        }
+
+        .table tbody tr {
+            background-color: #ffffff;
+            transition: 0.2s;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f1f7ff;
+        }
+
+        .glyphicon-trash {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .glyphicon-trash:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="text-primary">Exam Schedule List</h3>
+            </div>
+
+            <div class="col-sm-6 text-right">
+                <div class="btn-group">
+                    <button class="btn btn-info">Schedule Now</button>
+                    <button class="btn btn-success">More</button>
+                    <button class="btn btn-warning">Print</button>
+                    <button class="btn btn-primary">
+                        Add Exam <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+
+                <thead>
+                    <tr>
+                        <th>Examination</th>
+                        <th>Semester</th>
+                        <th>Dept</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th class="text-right">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>IAPR - EXPERIMENT MARKS</td>
+                        <td>EVEN</td>
+                        <td>AI</td>
+                        <td>23-Feb-2026</td>
+                        <td>23-Feb-2026</td>
+                        <td class="text-right">
+                            <span class="glyphicon glyphicon-trash text-danger"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ML - MODEL PRACTICAL</td>
+                        <td>EVEN</td>
+                        <td>AI</td>
+                        <td>18-Feb-2026</td>
+                        <td>18-Feb-2026</td>
+                        <td class="text-right">
+                            <span class="glyphicon glyphicon-trash text-danger"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>SA - SKILL ASSESSMENT</td>
+                        <td>EVEN</td>
+                        <td>AI</td>
+                        <td>16-Feb-2026</td>
+                        <td>16-Feb-2026</td>
+                        <td class="text-right">
+                            <span class="glyphicon glyphicon-trash text-danger"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>CIA - INTERNAL ASSESSMENT</td>
+                        <td>EVEN</td>
+                        <td>AI</td>
+                        <td>14-Feb-2026</td>
+                        <td>14-Feb-2026</td>
+                        <td class="text-right">
+                            <span class="glyphicon glyphicon-trash text-danger"></span>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
